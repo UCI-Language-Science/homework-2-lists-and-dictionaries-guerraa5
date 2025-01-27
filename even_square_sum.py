@@ -11,7 +11,9 @@
 def even_square_sum():
     numbers = [1, 62, 3, 57, 26, 8, 101, 200, 43, 20, 11]
 
-    # YOUR CODE GOES HERE
+    total = sum(num ** 2 for num in numbers if num % 2 == 0)
 
+    print(total)
+                
 if __name__ == "__main__":
     even_square_sum()
